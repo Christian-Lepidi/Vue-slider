@@ -13,4 +13,14 @@ const app = createApp({
       ],
     };
   },
+
+  methods: {
+    nextClick() {
+      if (this.displayedImage > this.images.length) {
+        this.displayedImage = 0;
+      } else {
+        this.displayedImage++;
+      }
+    },
+  },
 }).mount("#app");
