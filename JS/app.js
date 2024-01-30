@@ -3,12 +3,13 @@ const { createApp } = Vue;
 const app = createApp({
   data() {
     return {
+      displayedImage: 0,
       images: [
-        "./vue-slider-markup-base/img/01.webp",
-        "./vue-slider-markup-base/img/02.webp",
-        "./vue-slider-markup-base/img/03.webp",
-        "./vue-slider-markup-base/img/04.webp",
-        "./vue-slider-markup-base/img/05.webp",
+        "./img/01.webp",
+        "./img/02.webp",
+        "./img/03.webp",
+        "./img/04.webp",
+        "./img/05.webp",
       ],
     };
   },
