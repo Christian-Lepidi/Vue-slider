@@ -21,7 +21,9 @@
         <img :src="images[displayedImage]" alt="" />
 
         <i class="fas fa-arrow-up up"></i>
-        <i class="fas fa-arrow-down down"></i>
+        <div class="next" @click="nextClick()">
+          <i class="fas fa-arrow-down down"></i>
+        </div>
       </div>
     </div>
   </body>
