@@ -19,8 +19,9 @@
     <div id="app">
       <div class="image-container" id="img-cont">
         <img :src="images[displayedImage]" alt="" />
-
-        <i class="fas fa-arrow-up up"></i>
+        <div class="prev" @click="prevClick()">
+          <i class="fas fa-arrow-up up"></i>
+        </div>
         <div class="next" @click="nextClick()">
           <i class="fas fa-arrow-down down"></i>
         </div>

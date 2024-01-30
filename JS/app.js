@@ -16,10 +16,17 @@ const app = createApp({
 
   methods: {
     nextClick() {
-      if (this.displayedImage > this.images.length) {
+      if (this.displayedImage >= this.images.length - 1) {
         this.displayedImage = 0;
       } else {
         this.displayedImage++;
+      }
+    },
+    prevClick() {
+      if (this.displayedImage <= 0) {
+        this.displayedImage = this.images.length - 1;
+      } else {
+        this.displayedImage--;
       }
     },
   },
